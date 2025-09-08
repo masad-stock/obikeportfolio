@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return getAllTags().map((t) => ({ tag: t }))
 }
 
-export default function TagDetailPage({ params }: { params: { tag: string } }) {
-  const tag = decodeURIComponent(params.tag)
+export default async function TagDetailPage({ params }: { params: Promise<{ tag: string }> }) {
+  const { tag: tagParam } = await params
+  const tag = decodeURIComponent(tagParam)
   const posts = getAllPosts().filter((p) => (p.tags ?? []).includes(tag))
   if (!posts.length) return notFound()
   return (
