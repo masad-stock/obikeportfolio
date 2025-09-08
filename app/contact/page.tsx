@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 
+export const dynamic = 'force-dynamic';
+
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [isSubmitting, setIsSubmitting] = useState(false);
