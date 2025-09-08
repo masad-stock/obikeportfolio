@@ -28,13 +28,13 @@ export default function HomePage() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-academic-gold to-academic-teal rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <div className="relative h-32 w-32 overflow-hidden rounded-full ring-4 ring-white/20 sm:h-40 sm:w-40 transition-transform duration-300 group-hover:scale-105">
-              <Image
+              {/* <Image
                 src="/images/headshot.jpg"
                 alt="Obike Emmanuel"
                 fill
                 sizes="160px"
                 className="object-cover"
-              />
+              /> */}
             </div>
           </div>
           <div className="space-y-4">
@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Marquee speed={30}>
+      {/* <Marquee speed={30}>
         <div className="inline-flex gap-8 py-4">
           <Image
             src="/images/project1.jpeg"
@@ -120,9 +120,9 @@ export default function HomePage() {
             className="rounded-lg object-cover"
           />
         </div>
-      </Marquee>
+      </Marquee> */}
 
-      <Section title="About">
+      {/* <Section title="About">
         <p>
           I am a passionate educator with experience teaching Computer Science
           and Mathematics, focused on building strong problem-solving skills and
@@ -241,7 +241,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </Section>
+      </Section> */}
     </div>
   );
 }

@@ -4,10 +4,36 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState<Date | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [particles, setParticles] = useState<Array<{
+    id: number;
+    color: string;
+    left: string;
+    top: string;
+    delay: string;
+    duration: string;
+  }>>([]);
 
   useEffect(() => {
+    // Generate particles client-side
+    const colors = [
+      "bg-white/50",
+      "bg-academic-cyan/60",
+      "bg-academic-teal/60",
+      "bg-academic-gold/60",
+      "bg-purple-300/60",
+    ];
+    const generatedParticles = [...Array(25)].map((_, i) => ({
+      id: i,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 5}s`,
+      duration: `${3 + Math.random() * 4}s`,
+    }));
+    setParticles(generatedParticles);
+
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -124,28 +150,18 @@ export default function Footer() {
 
       {/* Floating particles */}
       <div className="absolute inset-0">
-        {[...Array(25)].map((_, i) => {
-          const colors = [
-            "bg-white/50",
-            "bg-academic-cyan/60",
-            "bg-academic-teal/60",
-            "bg-academic-gold/60",
-            "bg-purple-300/60",
-          ];
-          const randomColor = colors[Math.floor(Math.random() * colors.length)];
-          return (
-            <div
-              key={i}
-              className={`absolute w-1.5 h-1.5 ${randomColor} rounded-full animate-float`}
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          );
-        })}
+        {particles.map((particle) => (
+          <div
+            key={particle.id}
+            className={`absolute w-1.5 h-1.5 ${particle.color} rounded-full animate-float`}
+            style={{
+              left: particle.left,
+              top: particle.top,
+              animationDelay: particle.delay,
+              animationDuration: particle.duration,
+            }}
+          ></div>
+        ))}
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-16">
@@ -200,12 +216,12 @@ export default function Footer() {
               <div>
                 <p className="text-sm text-slate-300">Current Time</p>
                 <p className="text-academic-cyan font-mono text-lg">
-                  {currentTime.toLocaleTimeString("en-US", {
+                  {currentTime ? currentTime.toLocaleTimeString("en-US", {
                     hour12: true,
                     hour: "2-digit",
                     minute: "2-digit",
                     second: "2-digit",
-                  })}
+                  }) : "Loading..."}
                 </p>
               </div>
             </div>
