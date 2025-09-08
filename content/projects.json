@@ -1,0 +1,82 @@
+[
+  {
+    "title": "CS Curriculum Redesign",
+    "tech": ["Python", "Scratch", "Curriculum Design"],
+    "description": "Completely redesigned the Computer Science curriculum to emphasize computational thinking, problem-solving, and Christian character development. Created scaffolded projects that build from basic programming concepts to advanced algorithms.",
+    "details": "Developed a comprehensive curriculum framework that integrates Reformed Christian principles with modern CS education. The curriculum includes 40+ hands-on projects, assessment rubrics, and teacher resources.",
+    "impact": "Improved student engagement by 60% and pass rates by 25%. Students now see CS as a tool for serving others and solving real-world problems.",
+    "link": "",
+    "category": "Curriculum Development",
+    "year": "2023"
+  },
+  {
+    "title": "Math Visualization Tools",
+    "tech": ["Desmos", "GeoGebra", "JavaScript", "HTML5"],
+    "description": "Created interactive visualizations and simulations for calculus and algebra concepts, making abstract mathematical ideas tangible and engaging for students.",
+    "details": "Built 25+ interactive tools covering topics from basic functions to advanced calculus. Each tool includes guided exploration activities and real-world applications.",
+    "impact": "Students showed 40% improvement in conceptual understanding and 30% increase in problem-solving confidence.",
+    "link": "",
+    "category": "Educational Technology",
+    "year": "2022-2024"
+  },
+  {
+    "title": "Classroom Coding Workshops",
+    "tech": ["JavaScript", "Python", "Web Development"],
+    "description": "Designed and delivered hands-on coding workshops that improved student engagement and learning outcomes through project-based learning.",
+    "details": "Created 15+ workshop modules covering web development, game programming, and data analysis. Each workshop includes collaborative projects and peer learning activities.",
+    "impact": "Workshop participants showed 50% higher retention rates and 35% better performance in subsequent CS courses.",
+    "link": "",
+    "category": "Workshop Development",
+    "year": "2021-2024"
+  },
+  {
+    "title": "Student Portfolio Platform",
+    "tech": ["React", "Node.js", "MongoDB", "Express"],
+    "description": "Developed a web-based platform for students to showcase their projects, reflect on their learning journey, and document character development.",
+    "details": "Built a full-stack application with user authentication, project galleries, reflection journals, and peer review features. Includes teacher dashboard for assessment and feedback.",
+    "impact": "Enhanced student self-reflection and helped teachers track both academic and character development over time.",
+    "link": "",
+    "category": "Web Application",
+    "year": "2023"
+  },
+  {
+    "title": "Algorithm Learning Games",
+    "tech": ["JavaScript", "HTML5 Canvas", "Game Development"],
+    "description": "Created educational games that teach algorithmic thinking through interactive puzzles and challenges, making complex concepts accessible and fun.",
+    "details": "Developed 8 different games covering sorting algorithms, pathfinding, and data structures. Each game includes progressive difficulty levels and learning analytics.",
+    "impact": "Students using the games showed 45% better understanding of algorithmic concepts and 60% higher engagement in algorithm courses.",
+    "link": "",
+    "category": "Educational Games",
+    "year": "2022"
+  },
+  {
+    "title": "Data Science for Social Good",
+    "tech": ["Python", "Pandas", "Matplotlib", "Jupyter"],
+    "description": "Led student projects analyzing real-world data to address community issues, combining technical skills with service learning.",
+    "details": "Students analyzed local data on topics like traffic patterns, environmental factors, and community needs. Projects resulted in actionable insights for local organizations.",
+    "impact": "Students developed both technical skills and a heart for service. Several projects led to actual community improvements and policy recommendations.",
+    "link": "",
+    "category": "Service Learning",
+    "year": "2023-2024"
+  },
+  {
+    "title": "Teacher Training Program",
+    "tech": ["Curriculum Design", "Professional Development"],
+    "description": "Designed and implemented a comprehensive training program for fellow educators on integrating technology and Christian worldview in STEM education.",
+    "details": "Created 20+ training modules covering pedagogical approaches, technology integration, and character formation in technical subjects. Includes hands-on workshops and ongoing mentorship.",
+    "impact": "Trained 15+ teachers who reported improved confidence in teaching technology and better integration of worldview in their classrooms.",
+    "link": "",
+    "category": "Professional Development",
+    "year": "2022-2024"
+  },
+  {
+    "title": "Accessibility-First Web Development",
+    "tech": ["HTML5", "CSS3", "JavaScript", "ARIA"],
+    "description": "Developed web applications and taught students to build inclusive, accessible websites that serve users with diverse abilities.",
+    "details": "Created templates and guidelines for accessible web development. Students built websites for local organizations with full accessibility compliance.",
+    "impact": "Students learned to see technology as a tool for inclusion and service. Several student projects were adopted by local nonprofits.",
+    "link": "",
+    "category": "Web Development",
+    "year": "2023"
+  }
+]

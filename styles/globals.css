@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+/* Typography tweaks for prose */
+.prose { @apply max-w-none; }
+
+/* Improved type scale and rhythm */
+:root {
+  --leading: 1.65;
+}
+h1, h2, h3, h4 { line-height: var(--leading); }
+p { line-height: var(--leading); }
+
+
+
