@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { getPostBySlug } from '../../../lib/posts'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 export const alt = 'Blog Post Open Graph Image'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
