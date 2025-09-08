@@ -2,6 +2,8 @@
 
 import SkillsVisualization from "../../components/SkillsVisualization";
 
+export const dynamic = 'force-dynamic';
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
